@@ -16,30 +16,33 @@
   <body>
     <div class="container py-2 m-2">
       <div class="row justify-content-between mx-auto">
-        <div class="col-8">
-          <input
-            class="d-inline-block"
-            type="search"
-            placeholder="Type a city ..."
-          />
-        </div>
-        <div class="col-2"><button class="btn btn-success">Search</button></div>
-        <div class="col-2">
-          <button class="btn btn-primary">Current</button>
+        <div class="col-12">
+          <form class="row" action="" id="form">
+            <input
+              class="d-inline-block w-75"
+              type="search"
+              placeholder="Type a city ..."
+              id="input_value"
+            />
+            <span class="w-25">
+              <button class="btn btn-success">Search</button>
+              <button class="btn btn-primary">Current</button>
+            </span>
+          </form>
         </div>
       </div>
       <div class="row mx-auto">
-        <div class="col-6 ">
-          <h3>New York</h3>
-          <p>Date & Time</p>
-          <p>Weather</p>
+        <div class="col-6 my-2">
+          <h3 id="city">Tehran</h3>
+          <p id="date">Date & Time</p>
+          <p id="description">Weather</p>
           <h1>Temperature</h1>
         </div>
         <div class="col-6 align-self-end">
           <div class="row flex-column">
             <div class="col">
-              <p>humidity</p>
-              <p>wind</p>
+              <p id="humidity">humidity</p>
+              <p id="wind">wind</p>
             </div>
           </div>
         </div>
