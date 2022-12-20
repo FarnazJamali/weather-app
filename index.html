@@ -11,17 +11,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
-    <style>
-      .wrapper{
-        width: 600px;
-        height: max-content;
-        border: 2px solid rgb(165, 158, 158);
-        border-radius: 20px;
-        margin: auto;
-        padding: 10px;
-      }
-    </style>
   </head>
   <body>
     <div class="container my-4">
@@ -29,16 +20,19 @@
         <div class="row justify-content-center">
           <div class="col-8 mx-auto">
             <form class="row" action="" id="form">
-              <input
-                class="d-inline-block w-50"
+              <div class="col-6"><input
+                class="form-control border border-primary"
                 type="search"
                 placeholder="Type a city ..."
                 id="input_value"
-              />
-              <span class="w-50">
-                <button class="btn btn-success">Search</button>
-                <button class="btn btn-primary" id="current">Current</button>
-              </span>
+              /></div>
+              
+              <div class="col-2 mx-2 ">
+                <button class="btn btn-outline-success shadow">Search</button>
+              </div>
+              <div class="col-2 mx-2">
+                <button class="btn btn-outline-primary shadow" id="current">Current</button>
+              </div>
             </form>
           </div>
         </div>
@@ -47,7 +41,7 @@
             <h3 id="city">Tehran</h3>
             <p id="date"></p>
             <p id="description">Sunny</p>
-            <h1>15 C</h1>
+            <h1>15 °C</h1>
           </div>
           <div class="col-4 align-self-end">
             <div class="row flex-column">
